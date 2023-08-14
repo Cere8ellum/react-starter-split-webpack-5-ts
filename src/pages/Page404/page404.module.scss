@@ -1,0 +1,8 @@
+@use "sass:map";
+@import "../../assets/styles/variables.scss";
+
+.error {
+    margin-top: 2vh;
+    @include fluidFontSize(148px, 208px, 480px, 1280px, 18px);
+    text-align: center;
+}

@@ -1,0 +1,13 @@
+@use "sass:map";
+@import "../../assets/styles/variables.scss";
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+
+    img {
+        width: 140px;
+    }
+}

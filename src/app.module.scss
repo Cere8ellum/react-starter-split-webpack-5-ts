@@ -1,0 +1,48 @@
+@use "sass:map";
+@import "./assets/styles/variables.scss";
+
+@font-face {
+  font-family: "Nekst";
+  src: local("Nekst"), local("Nekst-Black"),
+    url("./assets/fonts/Nekst-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("./assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: Nekst;
+  color: map.get($colors, dark-grey);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+

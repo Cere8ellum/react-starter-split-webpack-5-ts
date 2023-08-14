@@ -1,0 +1,6 @@
+@use "sass:map";
+@import "../../assets/styles/variables.scss";
+
+.logo{
+    @include fluidFontSize(24px, 36px, 480px, 1280px, 18px);
+}

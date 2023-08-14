@@ -1,0 +1,36 @@
+@use "sass:map";
+@import "../../assets/styles/variables.scss";
+
+$headerHeight: 50px;
+
+.header {
+  height: $headerHeight;
+  background-color: map.get($colors, violet);
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .right {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        padding: 0 10px;
+
+        &:hover {
+          background-color: map.get($colors, dark-grey);
+          color: map.get($colors, white);
+      }
+      }
+    }
+
+    a {
+      @include fluidFontSize(14px, 24px, 480px, 1280px, 14px);
+      text-decoration: none;
+      line-height: $headerHeight;
+    }
+  }
+}

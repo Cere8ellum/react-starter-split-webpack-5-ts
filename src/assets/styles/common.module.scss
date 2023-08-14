@@ -1,0 +1,16 @@
+@use "sass:map";
+@import "./variables.scss";
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.error {
+  font-size: 14px;
+  color: map.get($colors, red);
+  margin-top: 3px;
+}
