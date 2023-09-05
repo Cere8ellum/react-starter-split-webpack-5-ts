@@ -18,5 +18,7 @@
         "typescript"
     ],
     "typescript.tsdk": "node_modules\\typescript\\lib", // Use Workspace Version for using plugins from tsconfig
-    "typescript.enablePromptUseWorkspaceTsdk": true
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "typescript.tsserver.log": "verbose"
 }

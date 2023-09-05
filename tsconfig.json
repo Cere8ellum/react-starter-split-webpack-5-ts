@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "target": "es5",
         "rootDirs": [
             "src",
             "__jest__"
@@ -15,11 +16,11 @@
             "node_modules/@types",
             "src/types"
         ],
-        "target": "es5",
+        "allowJs": true, // Allow JavaScript files to be compiled
         "skipLibCheck": true, // Skip type checking of declaration files (.d.ts)
         "esModuleInterop": true, // Creates __importStar and __importDefault helpers for compatibility with the Babel
         "allowSyntheticDefaultImports": true, // allows import w/o default prop
-        "strict": true, // Еnabling all of the strict mode family options
+        "strict": true, // Еnable all of the strict mode family options
         "forceConsistentCasingInFileNames": true, // Force consistent casing in file names
         "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statements
         "module": "esnext", // Sets the module system for the program. Also it's required when use outFile option. 
@@ -29,6 +30,7 @@
         "noImplicitAny": true, // Raise error if the type "any" is specified somewhere
         "noImplicitThis": true, // Raise error on "this" expressions with an implied "any" type
         "noUnusedLocals": true, // Raise errors on unused local variables
+        "noUnusedParameters": true, // Report errors on unused parameters
         "noEmit": true, // Do not emit compiler output files like JavaScript source code, source-maps or declarations
         "jsx": "react",
         "plugins": [
@@ -40,6 +42,9 @@
             }
         ]
     },
+    "include": [
+        "src/**/*"
+    ],
     "exclude": [
         "node_modules",
         "build",

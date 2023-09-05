@@ -1,5 +1,5 @@
 {
-  "main": "src/index.ts",
+  "main": "src/index.tsx",
   "name": "react-starter-split-webpack-5-ts",
   "config": {
     "dev": "--config __webpack__/dev.config.js",
