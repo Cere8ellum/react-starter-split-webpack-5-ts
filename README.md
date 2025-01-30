@@ -1,5 +1,8 @@
 # React Starter kit using TS, JS, Babel, Jest, Webpack
 
+> [!NOTE]
+> You can say me "Thanks!" on my bitcoin wallet - **38sALvUH4ggKHfrK7Yd2fYiixBNhPu53hw**.
+
 ## About showing errors by VS Code.
 
 Added empty dummy.ts.
